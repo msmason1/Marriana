@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Website Layout</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+  background-color: #f1ccc1;
+  background-image: url("https://i.pinimg.com/originals/3f/8f/77/3f8f77d0ffd03d26eb89c01485f3119f.jpg");
+  padding: 20px;
+  text-align: center;
+  color: black;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: lightgreen;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: ccc1;
+  color: black;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+}
+
+/* Left and right column */
+.column.side {
+  width: 25%;
+}
+
+/* Middle column */
+.column.middle {
+  width: 50%;
+}
+
+  /* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}
+
+/* Style the footer */
+.footer {
+  background-color: f1f1f1;
+  padding: 10px;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Glamy's</h1>
+  <p>We want you to feel Beautiful and confident!</p>
+</div>
+
+<div class="topnav">
+   <a href="index.html">Home</a>
+  <a href="secondP.html">New</a>
+  <a href="thirdP.html">Sales</a>
+  <a href="fourthP.html">Best sellers</a>
+  <a href="fifthP.html">About Me</a>
+ 
+
+  
+
+  
+</div>
+
+<div class="row">
+  <div class="column side">
+    <h2>Travel Bag</h2>
+    <img 
+    src="https://ae01.alicdn.com/kf/HTB1sQgyIpXXXXXkXpXXq6xXFXXXc/New-Good-Portable-Type-font-b-Bags-b-font-Zipper-Cosmetic-Storage-Make-up-font-b.jpg" height="150" width="150">
+  </div>
+  
+  <div class="column side">
+    <h2>Maroon lip stick</h2>
+   <img
+   src="https://cdn.cultbeauty.co.uk/slots-img/hud/hud080_hudabeauty_powerbulletmattelipstick_2c_poolparty_2_1560x1960-2k4a1.jpg" height="150" width="150">
+  </div>
+  
+ <div class="column middle">
+    <h2>Makeup sponge set</h2>
+  <img 
+  src="https://i0.wp.com/ae01.alicdn.com/kf/H78d786ed475c4bd888821cc721f042aeV/3-Pcs-Cosmetic-Puff-Makeup-Sponge-Set-Blender-Make-Up-Tools-Beauty-Face-Foundation-Blending-for.jpg?crop=7,3,936,605&quality=3714" height="160" width="190">
+  </div> 
+
+</div>
+
+<div class="Footer">
+  <p>15% off at checkout!</p>
+</body>
+</html>

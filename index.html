@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>CSS Website Layout</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		h1 {
+			font-family: "Lucida Console",
+			"Arial", san-serif;
+			border-style: solid;
+			font-size: 60px;
+			border-color: white;
+			text-shadow: 2px 5px black;
+		}
+
+		}
+
+		div {
+			border-style: solid;
+			border-color: white;
+		}
+
+		
+		* {
+			box-sizing: border-box;
+		}
+
+		.body {
+      font-family: Copperplate, Papyrus, fantasy;
+		  padding: 60px;
+			background-color: #BA55D3;
+      height: 150%;
+			color: white;
+		}
+
+		/* Style the header */
+		.header {
+			background-color: #FF69B4;
+			background-image: url(https://fcmod.org/wp-content/uploads/2020/10/purple-sparkle-natm-2020.jpg);
+			padding: 20px;
+			text-align: center;
+			color: white;
+		}
+
+		.footer {
+			background-color: #FF69B4;
+			padding: 40px;
+			text-align: center;
+			color: white;
+		}
+
+		/* Style the top navigation bar */
+		.topnav {
+			overflow: hidden;
+			background-color: #483D8B;
+		}
+
+		/* Style the topnav links */
+		.topnav a {
+			float: left;
+			display: block;
+			color: white;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+		}
+
+		/* Change color on hover */
+		.topnav a:hover {
+			background-color: ccc1;
+			color: white;
+		}
+
+		table,
+		th,
+		td {
+			border: 1px solid black;
+			border-collapse: collapse;
+		}
+
+		table.center {
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+
+		/* Create three unequal columns that floats next to each other */
+		.column {
+			float: left;
+			padding: 10px;
+		}
+
+		/* Left and right column */
+		.column.side {
+			width: 25%;
+		}
+
+		/* Middle column */
+		.column.middle {
+			width: 50%;
+		}
+
+		/* Clear floats after the columns */
+		.row:after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+
+
+		/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+		@media screen and (max-width: 600px) {
+			.column.side,
+			.column.middle {
+				width: 100%;
+			}
+		}
+	</style>
+</head>
+
+
+
+	<div class="header">
+		<h1>Glamy's</h1>
+		<p>We want you to feel Beautiful and confident!</p>
+	</div>
+
+	<div class="topnav">
+		<a href="index.html">Home</a>
+		<a href="secondP1.html">New</a>
+		<a href="thirdP.html">Sales</a>
+		<a href="fourthP.html">Best sellers</a>
+		<a href="fifthP.html">About Me</a>
+
+	</div>
+	<div class="body">
+		
+			<h2>Why we started?</h2>
+			<p>I started this business because since I was a little girl I loved makeup. I loved how makeup can change one's appearace
+				and make you feel beautiful. I wanted makeup to be affordable to everyone and to be glamorous and made with good ingredients.
+				One other inportant thing to me was to make fun and bright colors plattes.</p>
+			<h2>Who are we?</h2>
+			<p>We are a makeup store that sells the newest products that are best for you. we have a lot of products and even lots
+				of sales.</p>
+			<h2>How we can help you?</h2>
+			<p>We are a business that can help you pick the best makeup that suits you and have the newset good quliaty makeup </p>
+     
+	<center><img src = //i.pinimg.com/564x/35/5b/73/355b7301e37441c4872da90a9e9921ef.jpg height="450" width="549">	</center>
+
+	</div>
+  
+	<p>
+		<div class="footer">
+			<p>Contact Us</p>
+			Phone Number: 567-435-667
+			<br>Email: glamysmakeup@gmail.com
+<br>Instagram: glamys523>
+</div>
+
+</body>
+</html>

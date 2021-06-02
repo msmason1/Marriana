@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Website Layout</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+ h1 {
+  font-family: "Lucida Console",
+  "Arial", san-serif;
+  border-style: solid;
+  font-size: 60px;
+  border-color: white;
+  text-shadow: 2px 5px black;
+}
+}
+
+div {
+  border-style: solid;
+  border-color: white;
+}
+body {
+  font-family: Copperplate, Papyrus, fantasy;
+}
+* {
+  box-sizing: border-box;
+}
+
+.body {
+  margin: 0;
+  padding: 60px;
+ 
+  background-color: #BA55D3;
+  color: white;
+}
+
+/* Style the header */
+.header {
+  background-color: #FF69B4;
+  background-image: url(https://fcmod.org/wp-content/uploads/2020/10/purple-sparkle-natm-2020.jpg);
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+.footer {
+  background-color: #FF69B4;
+  padding: 40px;
+  text-align: center;
+  color: white;
+}
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #483D8B;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: ccc1;
+  color: white;
+}
+ table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+table.center {
+  margin-left: auto; 
+  margin-right: auto;
+}
+
+
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+}
+
+/* Left and right column */
+.column.side {
+  width: 25%;
+}
+
+/* Middle column */
+.column.middle {
+  width: 50%;
+}
+
+  /* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.img {
+  width: 80%;
+
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}
+</style>
+</head>
+
+<body>
+<div class="header">
+  <h1>Glamy's</h1>
+ 
+</div>
+
+<div class="topnav">
+  <a href="index.html">Home</a>
+  <a href="secondP1.html">New</a>
+  <a href="thirdP.html">Sales</a>
+  <a href="fourthP.html">Best sellers</a>
+  <a href="fifthP.html">About Me</a> 
+</div>
+ 
+<div class="body">
+  <div>
+  <div class="column middle">
+    <h1>About Me</h1>
+  <p>I'm 18 years old I will be graduating high school soon and i i'm planning to attend college. I'm in the cte program that I enjoy very much where i i'm learning so many cool computer skillls such as how to make a webpage. This website i created is a makeup business where i sell products.</p>
+  
+  </tr>
+  </table>
+   </div>
+  </div>
+   </p> 
+  <tr>
+    <div class="img">
+	<td> <img
+   src="https://www.reynolds.k12.or.us/sites/default/files/imageattachments/lee/page/17751/basketball-1.jpg" height="350" width="449"></td>
+<td> <img
+   src="https://cdn.pixabay.com/photo/2016/08/31/22/15/beach-1634736_960_720.jpg"height="350" width="449"></td>
+<td> <img
+   src="https://cdn.shopify.com/s/files/1/0014/9504/0052/products/Basketball_Gender_Reveal_Blue_1024x1024.jpg?v=1569413085"height="350" width="449"></td>
+<td> <img
+   src="https://www.photoblog.com/learn/wp-content/uploads/2019/01/26-990x556.jpg"height="350" width="449"></td>
+   </div>
+  </tr>
+  </table>
+   </div>
+
+ 
+ <div class="footer">
+  <p>Contact Us</p>
+  Phone Number: 567-435-667
+<br>Email: glamysmakeup@gmail.com
+<br>Instagram: glamys523>
+<div>
+  </div>
+   </p> 
+</body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Website Layout</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  h1 {
+  font-family: "Lucida Console",
+  "Arial", san-serif;
+  border-style: solid;
+  font-size: 60px;
+  border-color: white;
+  text-shadow: 2px 5px black;
+}
+}
+
+div {
+  border-style: solid;
+  border-color: white;
+}
+body {
+  font-family: Copperplate, Papyrus, fantasy;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.body {
+  margin: 0;
+  padding: 60px;
+ 
+  background-color: #BA55D3;
+  color: white;
+}
+
+/* Style the header */
+.header {
+  background-color: #FF69B4;
+  background-image: url(https://fcmod.org/wp-content/uploads/2020/10/purple-sparkle-natm-2020.jpg);
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+.footer {
+  background-color: #FF69B4;
+  padding: 40px;
+  text-align: center;
+  color: white;
+}
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #483D8B;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: ccc1;
+  color: white;
+}
+ table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+table.center {
+  margin-left: auto; 
+  margin-right: auto;
+}
+
+
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+}
+
+/* Left and right column */
+.column.side {
+  width: 25%;
+}
+
+/* Middle column */
+.column.middle {
+  width: 50%;
+}
+
+  /* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}
+</style>
+</head>
+
+<body>
+<div class="header">
+  <h1>Glamy's</h1>
+  <p>We want you to feel Beautiful and confident!</p>
+</div>
+
+<div class="topnav">
+  <a href="index.html">Home</a>
+  <a href="secondP1.html">New</a>
+  <a href="thirdP.html">Sales</a>
+  <a href="fourthP.html">Best sellers</a>
+  <a href="fifthP.html">About Me</a> 
+</div>
+
+<div class= "body">
+
+  <table class="center">
+        	<tr>
+            	<th>Water proof Mascara</th>
+              <th>&nbsp</th>
+            	<th>Clear lip Gloss</th>
+              <th>&nbsp</th>
+            	<th>Makeup remover</th>
+        	</tr>
+        	<tr>
+    <td><img 
+    src="https://cdn.shopify.com/s/files/1/0338/3882/5612/products/purelash-black-onyx_0a361933-3eeb-4aaf-b507-535e06891cd8_2772x.jpg?v=1593445272" height="250" width="250"></td>
+    	  <td>&nbsp</td>
+         
+            	<td> <img
+   src="https://innerbeautycosmetics.com/content/uploads/2019/10/Inner-Beauty-Cosmetics-Shine-Infusion-Nourising-Lip-Oil-CRYSTAL-Moisturizing-Clean-Natural_1.jpg"  height="250" width="250"></td>
+   <td>&nbsp</td>     	
+            	<td> <img 
+  src="https://images-na.ssl-images-amazon.com/images/I/81dg6BzDljL._SY355_.jpg" height="250" width="250"></td> 
+	        </tr>
+          <tr> 
+           <td> This is a water proof mascara<br> that stays on longer and shouldn't<br> smudge under the eyes when they<br> get wet the price of this is $6.47 </td>
+           	<td>&nbsp</td>
+            <td>This is a lip gloss that is clear<br> and shinny the price of this is<br>$5.56 </td>
+            	<td>&nbsp</td>
+             <td> This is a two pack makeup<br> remover for the price of $8.99</td>
+           </tr>
+    	</table>
+
+
+
+</div>
+
+
+  <div class="footer">
+  <p>Contact Us</p>
+  Phone Number: 567-435-667
+<br>Email: glamysmakeup@gmail.com
+<br>Instagram: glamys523>
+</div>
+
+</body>
+</html>
